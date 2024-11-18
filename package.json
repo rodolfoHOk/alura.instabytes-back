@@ -1,0 +1,39 @@
+{
+  "name": "insta-like-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "license": "AGPL-version-3.0",
+  "private": false,
+  "engines": {
+    "node": ">= 14.0.0",
+    "npm": ">= 6.0.0"
+  },
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "bugs": "",
+  "keywords": [],
+  "author": {
+    "name": "HiOk Dev",
+    "email": "hioktec@gmail.com",
+    "url": "https://github.com/rodolfoHOk/alura.instalike-back"
+  },
+  "contributors": [],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/server.js",
+    "dev": "",
+    "test": ""
+  },
+  "dependencies": {
+    "express": "^4.21.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.9.0",
+    "typescript": "^5.6.3"
+  }
+}
