@@ -8,6 +8,8 @@
 - Typescript
 - Node.js
 - Express
+- MongoDB (Atlas)
+- IAStudio (Google Gemini)
 
 ## Iniciando aplicação Node.js com Typescript
 
