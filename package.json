@@ -1,5 +1,5 @@
 {
-  "name": "insta-like-backend",
+  "name": "insta-bytes-backend",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -24,12 +24,13 @@
   "contributors": [],
   "scripts": {
     "build": "tsc -p tsconfig.json",
-    "start": "node dist/server.js",
+    "start": "node --env-file=.env dist/server.js",
     "dev": "",
     "test": ""
   },
   "dependencies": {
-    "express": "^4.21.1"
+    "express": "^4.21.1",
+    "mongodb": "^6.10.0"
   },
   "devDependencies": {
     "@types/express": "^5.0.0",
