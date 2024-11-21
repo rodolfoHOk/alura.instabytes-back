@@ -1,4 +1,4 @@
-import { Document, MongoClient, WithId } from 'mongodb';
+import { Document, InsertOneResult, MongoClient, WithId } from 'mongodb';
 import { dbConnect } from '../config/dbConfig';
 
 export class PostsModel {
@@ -13,5 +13,11 @@ export class PostsModel {
     const db = this.dbConnection.db('alura-instabytes');
     const collection = db.collection('posts');
     return collection.find().toArray();
+  }
+
+  async createPost(newPost: any): Promise<InsertOneResult<Document>> {
+    const db = this.dbConnection.db('alura-instabytes');
+    const collection = db.collection('posts');
+    return collection.insertOne(newPost);
   }
 }
