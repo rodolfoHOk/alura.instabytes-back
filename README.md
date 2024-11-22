@@ -11,6 +11,11 @@
 - MongoDB (Atlas)
 - IAStudio (Google Gemini)
 
+## Diferenças em relação as lives
+
+- Uso do Typescript
+- Uso de classes para camadas model e controller
+
 ## Iniciando aplicação Node.js com Typescript
 
 - npm init -y

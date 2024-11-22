@@ -2,6 +2,9 @@ import express from 'express';
 import { postRoutes } from './routes/postRoutes';
 
 const app = express();
+
+app.use(express.static('uploads'));
+
 postRoutes(app);
 
 app.listen(3000, async () => {
