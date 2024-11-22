@@ -65,3 +65,21 @@
 - npm run build
 
 - npm run start
+
+## Deploy
+
+- no browser acessar e logar no console.cloud.google.com
+- criar projeto alura-instabytes
+- acessar terminal do projeto
+  - git clone https://github.com/rodolfoHOk/alura.instabytes-back
+  - bash service.sh
+- abrir editor:
+  - criar .env com as variáveis
+- terminal do editor:
+  - rm .env
+  - npm install
+  - gcloud run deploy --source . --port=3000
+  - service name: alura-instabytes-backend
+  - region: 30
+  - alow unauthenticated: y
+  - acessar o service url fornecido
